@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Websocket</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <!-- Styles -->
         <style>
             html, body {
@@ -63,8 +63,8 @@
             }
         </style>
     </head>
-    <body>
-        <div class="flex-center position-ref full-height">
+    <body> 
+        <div id="app" class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -85,15 +85,12 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://www.youtube.com/watch?v=H_4UubWE9NQ">Docs</a>
+                    <a href="https://docs.beyondco.de/laravel-websockets/1.0/getting-started/installation.html">Websocket</a> 
+                    <a href="https://github.com/RampsosPeck/12chatwebsocket">GitHub</a>
                 </div>
             </div>
-        </div>
+        </div> 
+        <script src="js/app.js"></script>
     </body>
 </html>
